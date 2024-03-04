@@ -1,0 +1,123 @@
+.contact_us h1 .icon-envelope {
+  color: var(--color_p_title);
+  font-size: 2.1rem;
+  margin-right: 1rem;
+}
+
+.contact_us h1 {
+  font-size: 2.1rem;
+  color: var(--color_title);
+  margin-bottom: 1rem;
+}
+
+.contact_us p {
+  color: var(--color_p_title);
+  font-size: 17px;
+  margin-bottom: 2rem;
+  line-height: 1.65rem;
+}
+
+.contact_us .left_Forme label {
+  color: var(--color_p_title);
+  font-size: 17px;
+
+}
+
+.contact_us .left_Forme input,
+.contact_us .left_Forme textarea {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  width: 15rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: .3s;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.776);
+}
+
+.contact_us .left_Forme input:focus,
+.contact_us .left_Forme textarea:focus {
+  border: 1px solid rgba(45, 212, 191);
+}
+
+.contact_us .left_Forme input:hover,
+.contact_us .left_Forme textarea:hover {
+  border: 1px solid rgba(45, 212, 191);
+}
+.light .contact_us .left_Forme input,
+.light .contact_us .left_Forme textarea {
+background-color: white;
+color: black;
+}
+
+
+.contact_us .left_Forme textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.contact_us .left_Forme button {
+  background-color: var(--Bor_All_page);
+  width: 8rem;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 1.07rem;
+  text-transform: capitalize;
+  opacity: 0.8;
+  border-radius: 6px;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.178);
+}
+.light .contact_us .left_Forme button{
+  background-color: rgba(0, 0, 0, 0.653);
+}
+
+.contact_us .left_Forme button:hover {
+  scale: 0.94;
+}
+
+@media(max-width:600px) {
+  .contact_us .left_Forme form {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  .contact_us .left_Forme .G_email,
+  .contact_us .left_Forme .G_message {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .contact_us .right_img {
+    display: none;
+  }
+
+  .contact_us .left_Forme {
+    width: 85%;
+
+  }
+
+  .contact_us .left_Forme input,
+  .contact_us .left_Forme textarea {
+    margin: 0;
+    padding: 0.6rem 4px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact_us .left_Forme button {
+    align-self: center;
+  }
+}
+
+@media(max-width:1100px) {
+  .message_animation {
+    display: none;  
+  }
+}

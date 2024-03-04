@@ -1,0 +1,35 @@
+.footer.flex {
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.footer ul li a {
+  color: var(--color_p_title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.footer.flex ul {
+  gap: 0.6rem;
+}
+
+.footer.flex ul li a:hover {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.footer.flex p {
+  color: rgba(240, 248, 255, 0.308);
+}
+.light .footer.flex p {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 16px;
+}
+
+@media(max-width:800px) {
+  .footer.flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

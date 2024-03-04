@@ -1,0 +1,149 @@
+
+main.flex{
+  gap:2.4rem;
+  align-items: start;
+
+}
+main.flex .main_right.flex{
+  flex-grow: 1; 
+  flex-wrap: wrap;
+  column-gap:16px;
+  row-gap: 2rem;
+  justify-content: center;
+}
+main.flex .main_left{
+  flex-direction: column;
+  gap: 13px;
+}
+main.flex .main_left button{
+  background-color:rgba(63, 63, 70, 0.4) ;
+  width: 11rem;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 1.07rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 8px;
+}
+main.flex .main_left button.active{
+  opacity: 1;
+  border: 1.3px solid var(--blue);
+  font-weight: bold;padding: 12px 0;
+  transition: 0.3s;
+  background-color: rgba(63, 63, 70, 0.907);
+}
+.light main.flex .main_left button.active{
+  border: 1.3px solid rgba(0, 0, 0, 0.548);
+}
+.light main.flex .main_left button{
+  opacity: 0.9;
+}
+main.flex .main_left button:hover{
+  opacity: 1;
+}
+.Items_cart{
+  border: 1.5px solid rgba(93,183,253,0.3);
+  transition: 0.4s;
+  border-radius:6px ;
+  background-image:linear-gradient(
+    rgba(255, 255, 255, 0.07),
+  rgba(255, 255, 255, 0.07)) ;
+}
+.Items_cart:hover{
+  border: 1px solid var(--blue);
+  cursor: pointer;
+  rotate: 1deg;
+  scale: 1.02;
+}
+.light .Items_cart:hover{
+  border: none;
+  background-color: rgba(40, 40, 40, 0.069);
+
+}
+
+.light .Items_cart{
+  border: none;
+  box-shadow: 0.5px 1px 1px 0.1px rgba(0, 0, 0, 0.301);
+}
+.Items_cart img{
+  border-radius:6px ;
+}
+.Items_cart .box{
+  padding: 1rem 0.4rem;
+}
+.Items_cart .box h1{
+  color: var(--color_title);
+  text-transform:capitalize ;
+  font-size: 25px;
+  font-weight: 400;
+}
+.Items_cart .box p{
+  color: var(--color_p_title);
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+.Items_cart .box a{
+  color: aliceblue;
+  gap: 10px;
+}
+.Items_cart .icon{
+  justify-content: space-between;
+}
+.Items_cart .icon  .Tow_icon{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  
+}
+.Items_cart  .icon-link,
+.Items_cart  .icon-github1{
+  opacity: .6;
+}
+.light .Items_cart  .icon-link,
+.light .Items_cart  .icon-github1{
+  color: rgba(0, 0, 0, 0.891);
+}
+.Items_cart  .icon-link:hover,
+.Items_cart  .icon-github1:hover{
+  cursor: pointer;
+  transition: .3s;
+  opacity: 1;
+  color:var(--color_icon);
+  
+}
+.Items_cart .link .icon-arrow-right{
+  font-size:18px ;
+  font-weight: 600;
+}
+.Items_cart .icon .link{
+  opacity: .8;
+  color: var(--blue);
+  margin-right: 12px;
+  font-size: 17px;
+  transition: .3s;
+}
+@media(max-width:700px){
+  main.flex{
+    flex-wrap: wrap;
+  }
+  main.flex .main_left{
+    margin:auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -1px;
+
+  }
+  main.flex .main_left button{
+    background-color:var(--Bor_All_page) ;
+    width: 6rem;
+    padding: 8px 0px;
+    font-size: .9rem;
+    
+  }
+  .Items_cart{
+    margin-left: -10px;
+  }
+}
+

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2px;
+  /* dont start */
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Bg_All_page: rgb(24 24 27);
+  --primary:#000;
+  --Bor_All_page: rgba(63, 63, 70, 0.4);
+  --color_title: rgb(244 244 245);
+  --color_p_title: rgb(161 161 170);
+  --Bg_nav: rgb(39, 39, 42);
+  --blue: rgb(93, 183, 252);
+  --color_icon: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* !change background_color black o white */
+.light {
+  --primary:rgba(252, 255, 255, 0.91);
+  --Bg_All_page:#ffffff;
+  
+  --Bor_All_page: rgba(39, 37, 37, 0.196);
+
+  --color_title: rgb(39 39 42);
+  --color_p_title: rgb(82 82 91);
+  --Bg_nav: rgb(253, 253, 253);
+  --blue: rgb(0, 131, 246);
+  --color_icon: #333;
+}
+
+body {
+  color: rgb(244 244 245);
+  background-color: var(--Bg_white);
+  background-color: var(--primary);
+}
+
+.Container {
+  border: 0.1px solid var(--Bor_All_page);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--Bg_All_page);
+  padding: 0 4rem;
+}
+
+
+.line_page {
+  border-bottom: 1px solid var(--Bor_All_page);
+  margin: 3rem 0;
+  width: calc(100% + 4rem + 4rem);
+  margin-left: -4rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  transform: 2s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* arrow  scroll top*/
+.scrollTop {
+  font-size: 21px;
+  font-weight: bold;
+  background-color: rgba(75, 171, 245, 0.746);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-family: monospace;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  border: 1.5px solid var(--blue);
+
+  color: white;
+
+}
+
+.scrollTop:hover {
+  opacity: .8;
+}
+
+button:disabled {
+  opacity: 0.4s;
+  cursor: not-allowed;
+}
+
+@media(max-width:600px) {
+  .Container {
+    width: 98%;
+    padding: 0 1.4rem;
+
+  }
+  .line_page {
+    width: calc(100% + 1.4rem + 1.4rem);
+    margin-left: -1.4rem;
+  }
+
+  .scrollTop {
+    opacity: 0.5;
+    height: 30px;
+    width: 30px;
+  }
+}

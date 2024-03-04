@@ -1,0 +1,108 @@
+header ul.flex {
+  gap: 16px;
+}
+header ul li a{
+  color: var(--color_title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+header.flex{
+  padding:  0 2.5rem;
+  padding-top: 1.2rem;
+  justify-content: space-between;
+}
+header.flex nav{
+  background-color: var(--Bg_nav);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 0.5px 0.5px 2px rgb(61, 59, 59);
+}
+header .Mode span{
+  padding:  10px 16px;
+  font-size: 19px;
+} 
+header ul li a:hover{
+  color: var(--blue);
+}
+header .menu{
+  display: none;
+}
+@media(max-width:700px){
+  header.flex nav{display: none;}
+  header .menu{display: block;}
+
+}
+/* Model */
+header .fixed{
+  position: fixed;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  inset: 0;
+  z-index: 10;
+  background-color: rgb(40,40,48,0.91);
+  backdrop-filter: blur(4px);
+}
+header .fixed ul.Modal{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--Bg_All_page);
+}
+header .fixed ul.Modal li {
+  border-bottom: 1px solid var(--Bor_All_page);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+header .fixed ul.Modal li:last-child{
+  border: none;
+}
+header .fixed ul.Modal li {font-size: 1rem;}
+header .fixed ul.Modal li:first-child {
+  text-align: right;
+  border: none;
+  padding-top: 0rem;
+  margin-bottom:-1rem ;
+}
+header .fixed ul.Modal{
+animation: myMove 0.6s 1;
+}
+@keyframes myMove{
+  0% {scale:0;}
+
+  60%{scale: 1.3;}
+  100% {scale:1;}
+}
+header .Mode,
+.icon-menu{
+  background-color: var(--Bg_nav);
+  height: 2.4rem;
+  width: 2.4rem;
+  justify-content: center;
+  margin-left: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--color_p_title);
+  box-shadow: 0.9px 0.9px 3px rgb(61, 59, 59);
+  transition: 0.2s;
+}
+header .Mode:hover,
+.icon-menu:hover{
+  box-shadow: 0.9px 0.9px 7px rgb(119, 115, 115);
+}
+header .icon-cancel{
+  font-size: 1.3rem;
+  color: var(--color_p_title);
+  transition: 0.3s;
+}
+header .icon-cancel:hover{
+  color: rgb(238, 102, 102);
+  font-size: 1.6;
+  rotate: 180deg;
+}
+
